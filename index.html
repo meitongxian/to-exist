@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Q & A</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <main>
+            <!-- <div class="folio-wrapper"></div> -->
+            <p class="mono folio">Q</p>
+            <p class="display question body-wrapper">How many years have you existed?</p>
+            <p class="mono folio">A</p>
+            <input
+                class="body-wrapper display"
+                type="number"
+                required
+                min="1"
+                max="123"
+                minlength="1"
+                maxlength="2"
+                size="2"
+                placeholder="Enter your age..."
+            />
+            <p class="display answer body-wrapper">
+                You have existed for <span id="age"></span> years.<sup><a class="link" href="#footnote-0">0</a></sup>
+                You would have existed for <span id="age-mayfly"></span> <span id="unit-mayfly"></span> as a mayfly,<sup><a class="link" href="#footnote-1">1</a></sup>
+                <span id="age-dog"></span> <span id="unit-dog"></span> as a dog,<sup><a class="link" href="#footnote-2">2</a></sup>
+                <span id="age-tortoise"></span> <span id="unit-tortoise"></span> as a tortoise,<sup><a class="link" href="#footnote-3">3</a></sup>
+                <span id="age-ginkgo"></span> <span id="unit-ginkgo"></span> as a ginkgo tree,<sup><a class="link" href="#footnote-4">4</a></sup>
+                and <span id="age-sun"></span> <span id="unit-sun"></span> as the Sun.<sup><a class="link" href="#footnote-5">5</a></sup>
+            </p>
+        </main>
+        <div class="footnote-wrapper">
+            <p class="mono folio footnote-folio" id="footnote-0">0</p>
+            <p class="mono body-wrapper" id="footnote-0"><a class="source link" href="" id="source-0" target="_blank">In 2023, the world average for human life expectancy was 73.2 years. ↗</a></p>
+            
+            <p class="mono folio footnote-folio" id="footnote-1">1</p>
+            <p class="mono body-wrapper" id="footnote-1"><a class="source link" href="" id="source-1" target="_blank">An adult mayfly only lives for about a day. ↗</a></p>
+
+            <p class="mono folio footnote-folio" id="footnote-2">2</p>
+            <p class="mono body-wrapper" id="footnote-2"><a class="source link" href="" id="source-2" target="_blank">Depending on size and breed, a dog lives for around 12 years. ↗</a></p>
+
+            <p class="mono folio footnote-folio" id="footnote-1">3</p>
+            <p class="mono body-wrapper" id="footnote-3"><a class="source link" href="" id="source-3" target="_blank">Certain species of tortoise can live for over 100 years. ↗</a></p>
+            
+            <p class="mono folio footnote-folio" id="footnote-4">4</p>
+            <p class="mono body-wrapper" id="footnote-4"><a class="source link" href="" id="source-4" target="_blank">Ginkgo trees can live for over 1000 years. ↗</a></p>
+            
+            <p class="mono folio footnote-folio" id="footnote-5">5</p>
+            <p class="mono body-wrapper" id="footnote-5"><a class="source link" href="" id="source-5" target="_blank">Formed 4.6 billion years ago, the Sun is approximately halfway through its lifespan as a main-sequence star. ↗</a></p>            
+
+        </div>
+        <script src="script.js" async defer></script>
+    </body> 
+</html>
